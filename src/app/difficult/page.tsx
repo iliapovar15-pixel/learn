@@ -1,12 +1,12 @@
-export const dynamic = "force-dynamic";
+"use client";
 
-import { Suspense } from "react";
-import DifficultClient from "./DifficultClient";
+import dynamic from "next/dynamic";
+
+const DifficultClient = dynamic(
+  () => import("./DifficultClient"),
+  { ssr: false }
+);
 
 export default function Page() {
-  return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <DifficultClient />
-    </Suspense>
-  );
+  return <DifficultClient />;
 }
