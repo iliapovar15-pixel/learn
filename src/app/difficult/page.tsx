@@ -5,16 +5,16 @@ import { useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { ArrowLeft, Volume2, Trash2, AlertTriangle, RefreshCw } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Word, shuffleArray } from "@/lib/words-data";
-import { Word as WordEn } from "@/lib/words-data-en";
+import { Button } from "../../components/ui/button";
+import { Word, shuffleArray } from "../../lib/words-data";
+import { Word as WordEn } from "../../lib/words-data-en";
 import {
   getDifficultWordsWithData,
   removeDifficultWord,
   clearDifficultWords,
   speakSpanish,
-} from "@/lib/words-store";
-import * as storeEn from "@/lib/words-store-en";
+} from "../../lib/words-store";
+import * as storeEn from "../../lib/words-store-en";
 
 type Language = "es" | "en";
 type AnyWord = (Word | WordEn) & { errorCount: number };
