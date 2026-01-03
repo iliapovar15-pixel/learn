@@ -3,14 +3,14 @@
 import { useState, useEffect } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
-import { FlashCard } from "@/components/FlashCard";
-import { Quiz } from "@/components/Quiz";
-import { getCategoryName, WordCategory, shuffleArray, Word } from "@/lib/words-data";
-import { Word as WordEn } from "@/lib/words-data-en";
-import { getLessonWords, saveLessonProgress } from "@/lib/words-store";
-import * as storeEn from "@/lib/words-store-en";
+import { FlashCard } from "../../components/FlashCard";
+import { Quiz } from "../../components/Quiz";
+import { getCategoryName, WordCategory, shuffleArray, Word } from "../../lib/words-data";
+import { Word as WordEn } from "../../lib/words-data-en";
+import { getLessonWords, saveLessonProgress } from "../../lib/words-store";
+import * as storeEn from "../../lib/words-store-en";
 import { ArrowLeft } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "../../components/ui/button";
 import Link from "next/link";
 
 type LessonStage = "foreign-first" | "russian-first" | "quiz" | "completed";
