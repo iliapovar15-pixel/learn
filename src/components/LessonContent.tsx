@@ -10,7 +10,7 @@ import { Word as WordEn } from "../lib/words-data-en";
 import { getLessonWords, saveLessonProgress } from "../lib/words-store";
 import * as storeEn from "../lib/words-store-en";
 import { ArrowLeft } from "lucide-react";
-import { Button } from "../../components/ui/button";
+import { Button } from "./ui/button";
 import Link from "next/link";
 
 type LessonStage = "foreign-first" | "russian-first" | "quiz" | "completed";
