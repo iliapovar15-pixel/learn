@@ -7,7 +7,7 @@ import { Word as WordEn } from "@/lib/words-data-en";
 import { Button } from "./ui/button";
 import { Check, X, Trophy, Volume2 } from "lucide-react";
 import { markWordAsDifficult, updateSRS, speakSpanish } from "../lib/words-store";
-import * as storeEn from "@/lib/words-store-en";
+import * as storeEn from "../lib/words-store-en";
 
 type Language = "es" | "en";
 type AnyWord = Word | WordEn;
