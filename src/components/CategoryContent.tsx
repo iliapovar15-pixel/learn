@@ -5,10 +5,10 @@ import { useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowLeft, Check, Lock, BookOpen } from "lucide-react";
-import { Button } from "../../components/ui/button";
-import { WordCategory, getCategoryName, getCategoryEmoji } from "../../lib/words-data";
-import { getLessonsForCategory, getLessonProgress, LessonProgress } from "../../lib/words-store";
-import * as storeEn from "../../lib/words-store-en";
+import { Button } from "./ui/button";
+import { WordCategory, getCategoryName, getCategoryEmoji } from "../lib/words-data";
+import { getLessonsForCategory, getLessonProgress, LessonProgress } from "../lib/words-store";
+import * as storeEn from "../lib/words-store-en";
 
 type Language = "es" | "en";
 
