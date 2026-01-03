@@ -4,8 +4,8 @@ import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowLeft, Upload, Download, Trash2, Check, AlertCircle, FileSpreadsheet, Layers, Plus } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { WordCategory, getCategoryName, getCategoryEmoji } from "@/lib/words-data";
+import { Button } from "../../components/ui/button";
+import { WordCategory, getCategoryName, getCategoryEmoji } from "../../lib/words-data";
 import {
   getWordsByCategory,
   importWordsFromExcel,
@@ -15,8 +15,8 @@ import {
   getStoredWords,
   parseManualWords,
   addManualWords,
-} from "@/lib/words-store";
-import * as storeEn from "@/lib/words-store-en";
+} from "../../lib/words-store";
+import * as storeEn from "../../lib/words-store-en";
 
 const categories: WordCategory[] = ["verbs", "adjectives", "nouns"];
 type Language = "es" | "en";
