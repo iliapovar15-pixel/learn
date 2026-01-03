@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { CategoryContent } from "@/components/CategoryContent";
+import { CategoryContent } from "../../components/CategoryContent";
 
 function CategoryLoading() {
   return (
