@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { LessonContent } from "@/components/LessonContent";
+import { LessonContent } from "../../components/LessonContent";
 
 function LessonLoading() {
   return (
