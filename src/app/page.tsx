@@ -3,13 +3,13 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { WordCategory, getCategoryName, getCategoryEmoji } from "@/lib/words-data";
-import { getLessonCount, getWordsByCategory, getReviewCount, getDifficultWordsWithData, initTheme, getTheme, setTheme, Theme, syncAllDataFromCloud, getStreak, getLastSyncTime, getProgress } from "@/lib/words-store";
-import * as storeEn from "@/lib/words-store-en";
+import { WordCategory, getCategoryName, getCategoryEmoji } from "../lib/words-data";
+import { getLessonCount, getWordsByCategory, getReviewCount, getDifficultWordsWithData, initTheme, getTheme, setTheme, Theme, syncAllDataFromCloud, getStreak, getLastSyncTime, getProgress } from "../lib/words-store";
+import * as storeEn from "../lib/words-store-en";
 import { BookOpen, Sparkles, Settings, Brain, AlertTriangle, PenTool, Moon, Sun, User, LogOut, Globe, Flame, CheckCircle2 } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { useAuth } from "@/components/AuthProvider";
-import { Progress } from "@/components/ui/progress";
+import { Button } from "../components/ui/button";
+import { useAuth } from "../components/AuthProvider";
+import { Progress } from "../components/ui/progress";
 
 const categories: WordCategory[] = ["verbs", "adjectives", "nouns"];
 
