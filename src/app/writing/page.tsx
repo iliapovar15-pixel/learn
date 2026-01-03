@@ -5,12 +5,12 @@ import { useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { ArrowLeft, Volume2, Check, X, PenTool, RotateCcw } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Word, shuffleArray, WordCategory } from "@/lib/words-data";
-import { Word as WordEn } from "@/lib/words-data-en";
-import { getStoredWords, speakSpanish } from "@/lib/words-store";
-import * as storeEn from "@/lib/words-store-en";
+import { Button } from "../../components/ui/button";
+import { Input } from "../../components/ui/input";
+import { Word, shuffleArray, WordCategory } from "../../lib/words-data";
+import { Word as WordEn } from "../../lib/words-data-en";
+import { getStoredWords, speakSpanish } from "../../lib/words-store";
+import * as storeEn from "../../lib/words-store-en";
 
 type Language = "es" | "en";
 type AnyWord = Word | WordEn;
