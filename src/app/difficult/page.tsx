@@ -1,12 +1,10 @@
-"use client";
-
-import dynamic from "next/dynamic";
-
-const DifficultClient = dynamic(
-  () => import("./DifficultClient"),
-  { ssr: false }
-);
+import { Suspense } from "react";
+import DifficultClient from "./DifficultClient";
 
 export default function Page() {
-  return <DifficultClient />;
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <DifficultClient />
+    </Suspense>
+  );
 }
