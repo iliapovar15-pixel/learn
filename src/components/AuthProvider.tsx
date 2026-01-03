@@ -2,8 +2,8 @@
 
 import { createContext, useContext, useEffect, useState, ReactNode } from 'react';
 import { User, Session, AuthError } from '@supabase/supabase-js';
-import { supabase } from '@/lib/supabase';
-import { setCurrentUser, syncAllDataFromCloud } from '@/lib/words-store';
+import { supabase } from "../lib/supabase";
+import { setCurrentUser, syncAllDataFromCloud } from "../lib/words-store";
 
 interface AuthContextType {
   user: User | null;
