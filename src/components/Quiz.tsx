@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Word, shuffleArray } from ""../lib/words-data";
+import { Word, shuffleArray } from "../lib/words-data";
 import { Word as WordEn } from "@/lib/words-data-en";
 import { Button } from "./ui/button";
 import { Check, X, Trophy, Volume2 } from "lucide-react";
