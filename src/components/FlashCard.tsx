@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Word } from "@/lib/words-data";
 import { Word as WordEn } from "@/lib/words-data-en";
 import { ChevronLeft, ChevronRight, RotateCcw, Volume2 } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "./ui/button";
 import { speakSpanish } from "../lib/words-store";
 import { speakEnglish } from "../lib/words-store-en";
 
