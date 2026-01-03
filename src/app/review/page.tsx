@@ -5,9 +5,9 @@ import { useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { ArrowLeft, Volume2, Clock, Brain, Sparkles } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Word, shuffleArray } from "@/lib/words-data";
-import { Word as WordEn } from "@/lib/words-data-en";
+import { Button } from "../../components/ui/button";
+import { Word, shuffleArray } from "../../lib/words-data";
+import { Word as WordEn } from "../../lib/words-data-en";
 import {
   getWordsForReview,
   getReviewCount,
@@ -17,8 +17,8 @@ import {
   getSRSData,
   initializeSRS,
   saveSRSData,
-} from "@/lib/words-store";
-import * as storeEn from "@/lib/words-store-en";
+} from "../../lib/words-store";
+import * as storeEn from "../../lib/words-store-en";
 
 type Mode = "info" | "review";
 type Language = "es" | "en";
