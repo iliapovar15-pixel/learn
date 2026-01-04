@@ -3,10 +3,18 @@ import DifficultClient from "./DifficultClient";
 
 export const dynamic = "force-dynamic";
 
-export default function Page() {
+type PageProps = {
+  searchParams: {
+    lang?: "es" | "en";
+  };
+};
+
+export default function Page({ searchParams }: PageProps) {
+  const lang = searchParams.lang ?? "es";
+
   return (
     <Suspense fallback={<div>Loading...</div>}>
-      <DifficultClient />
+      <DifficultClient lang={lang} />
     </Suspense>
   );
 }
