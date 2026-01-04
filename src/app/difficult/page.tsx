@@ -1,8 +1,5 @@
-export const dynamic = "force-dynamic";
 import { Suspense } from "react";
 import DifficultClient from "./DifficultClient";
-
-export const dynamic = "force-dynamic";
 
 export default function Page() {
   return (
